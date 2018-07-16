@@ -36,8 +36,14 @@ navigation > h2 {
     margin-bottom: 10px;
 }
 
-h2 {
+/* h2 {
     text-align: center;
+} */
+
+header {
+    text-align: center;
+    font-size: 1.2em;
+    font-style: oblique
 }
 
 ul {
