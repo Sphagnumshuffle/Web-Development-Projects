@@ -4,3 +4,16 @@ img {
     width: 500px;
     height: 500px;
 }
+
+ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    
+    height: 5vh;
+    background: grey;
+}
