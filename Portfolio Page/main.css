@@ -18,3 +18,42 @@ ul li {
     height: 5vh;
     background: grey;
 }
+
+#welcome-section {
+    background: mediumslateblue;
+}
+
+.work {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(1fr);
+    grid-template-areas: 
+    "web-dev data-science";
+    grid-gap: 20px;
+}
+
+.web-dev {
+    grid-area: web-dev;
+    background: grey;
+}
+
+.data-science {
+    grid-area: data-science;
+}
+
+/* .tech-guide {
+    grid-area: tech;
+}
+
+.landing-page {
+    grid-area: landing-page;
+}
+
+.web-dev {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "tech landing-page";
+    grid-gap: 15px;
+    background: grey;
+} */
