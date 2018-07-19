@@ -1,8 +1,11 @@
 
 
 img {
-    width: 400px;
-    height: 400px;
+    /* width: 400px;
+    height: 400px; */
+
+    max-width: 500px;
+    height: auto;
 }
 
 ul li {
@@ -37,6 +40,7 @@ ul li {
 .web-dev {
     display: grid;
     width: 100%;
+    height: 50vh;
     grid-area: web-dev;
     background: grey;
     grid-template-columns: repeat(3, 1fr);
@@ -60,4 +64,6 @@ ul li {
 
 .data-science {
     grid-area: data-science;
+    height: 50vh;
+    background: navajowhite;
 }
