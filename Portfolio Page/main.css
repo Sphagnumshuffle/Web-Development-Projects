@@ -1,8 +1,8 @@
 
 
 img {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 }
 
 ul li {
@@ -17,4 +17,47 @@ ul li {
     
     height: 5vh;
     background: grey;
+}
+
+#welcome-section {
+    background: mediumslateblue;
+}
+
+.work {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "web-dev "
+    "data-science";
+    grid-gap: 10px;
+}
+
+.web-dev {
+    display: grid;
+    width: 100%;
+    grid-area: web-dev;
+    background: grey;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "tech landing-page survey-form";
+    grid-gap: 5px;
+    background: grey;
+}
+
+.tech-guide {
+    grid-area: tech;
+}
+
+.landing-page {
+    grid-area: landing-page;
+}
+
+.survey-form {
+    grid-area: survey-form;
+}
+
+.data-science {
+    grid-area: data-science;
 }
