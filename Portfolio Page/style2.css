@@ -1,0 +1,12 @@
+
+ul li {
+    list-style: none;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+}
