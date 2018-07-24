@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+        <h1 id="title">
+                The Survey Form - Pick your poison in video game genres
+                </h1>
+              <div id="outer-form">
+              <div class="photo-container">
+              <img src="https://gamegenre.files.wordpress.com/2012/05/cover-by-dyvanno.jpg" alt="Video game genres">
+                </div>
+              <figcaption>Typical Video Game Genres, very rough classification</figcaption>
+              
+              <p id="description">Let us know what kind of gamer you are</p>
+              
+                <form id="survey-form" method="GET">
+                  <!-- Name field -->
+                  <div class="rowTab">
+                    <div class="labels">
+                      <label id="name-label" for="name">* Name: </label>
+                    </div>
+                    <div class="rightTab">
+                      <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name here" required>
+                    </div>
+                  </div>
+                  
+                  <!-- Email field -->
+                  <div class="rowTab">
+                    <div class="labels">
+                      <label id="email-label" for="email">* Email: </label>
+                    </div>
+                    <div class="rightTab">
+                      <input autofocus type="email" name="email" id="email" class="input-field" placeholder="Enter your email here" required>
+                    </div>
+                  </div>
+                  
+                  <!-- Age field -->
+                  <div class="rowTab">
+                    <div class="labels">
+                      <label id="number-label" for="age" >* Age </label>
+                    </div>
+                    <div class="rightTab">
+                      <input autofocus type="number" name="age" id="number" min="1" max="110" class="input-field" placeholder="Enter your true age here" required>
+                    </div>
+                  </div>
+                  <!-- Gender -->
+                  <div class="rowTab">
+                    <div class="labels">
+                      <label for="boxes">Please select gender</label>
+                  </div>
+                    <!-- Dropdown for gaming experience -->
+                    <div class="rightTab">
+                      <ul style="list: none;">
+                        <li class="radio">
+                          <label>Female<input name="radio-buttons" value="1" type="radio" class="gender-choice"</label></li>
+                          <li class="radio">
+                          <label>Male<input name="radio-buttons" value="2" type="radio" class="gender-choice" </label></li>
+                            <li class="radio">
+                              <label>I don't want to choose gender<input name="radio-buttons" value="3" type="radio" class="gender-choice" </label></li> 
+              </div>
+                      <div class="rightTab">
+                        <div class="labels">
+                          <label for="gamingYears">Enter your videogame experience in years</label>
+                        </div>
+                        <div class="rightTab">
+                          <select id="dropdown" name="gamingYears" class="dropdown">
+                            <option disabled value>Select an option</option>
+                            <option>Less than one year</option>
+                            <option>1-5 years</option>
+                            <option>5-10 years</option>
+                            <option>10-20 years</option>
+                            <option>More than 20 years</option>
+                            <option>I'm a gaming grandmaster no one can exceed my experience</option>
+                          </select>
+                        </div>
+                      </div>
+                      
+                      <!-- Checkbox for game genres -->
+                      <div class="rowTab">
+                        <div class="labels">
+                          <label for="genre">Videogame genres I play<br>(Check all you play)</label>
+                        </div>
+                        <div class="rightTab">
+                          <ul id="genre" style="list-style: none;">
+                            <li class="checkbox"><label><input name="gameGenre" value="1" type="checkbox" class="boxes">FPS</label></li>
+                            <li class="checkbox"><label><input name="gameGenre" value="2" type="checkbox" class="boxes">Sport games</label></li>
+                            <li class="checkbox"><label><input name="gameGenre" value="3" type="checkbox" class="boxes">RPG</label></li>
+                            <li class="checkbox"><labels><input name="gameGenre" value="4" type="checkbox" class="boxes">Action/Adventure games</label></li>
+                            <li class="checkbox"><label><input name="gameGenre" value="5" type="checkbox" class="boxes">Strategy games</label></li>
+                            <li class="checkbox"><label><input name="gameGenre" value="6" type="checkbox" class="boxes">Mobile games</label></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div>
+                      <div class="rowTab">
+                        <div class="labels">
+                          <label for="bestGame">What is your favourite Video game?</label>
+                        </div>
+                        <div class="rightTab">
+                          <textarea id="bestGame" class="input-field" style="height:45px; resize:vertical;" name="bestGame" placeholder="Enter your favourite Video game here..."></textarea>
+                        </div>
+                        </div>
+                        <button id="submit" type="submit">Submit</button>
+                        </form>
+    
+</body>
+</html>

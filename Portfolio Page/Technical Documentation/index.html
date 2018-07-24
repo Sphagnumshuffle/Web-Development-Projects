@@ -1,0 +1,222 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Grid - Techincal Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</head>
+<body>
+    <main class="main-text" id="main-doc">
+        <section class="main-section">
+            <header>
+            <h1>Technical guide - CSS Grid</h1>
+        </header>
+
+            <div id="content">
+                <section class="main-section" id="Welcome_to_the_Technical_Guide_to_how_to_use_CSS">
+                    <header>
+                <h2>Welcome to the Technical Guide to how to use CSS 
+                    Grid </h2> 
+                </header>
+                    <p>
+                    This project is also done utilizing awesome
+                    benefits provided by CSS grid. I've been experimenting
+                    with Flexbox previously but in my opinion I find CSS grid
+                    is more versatile than Flexbox. But hey, you can also combine
+                    both of them and take advantage of pros in each. Strap in and 
+                    let's get started!
+                    </p>
+                </section>
+
+                <section class="main-section" id="Little_bit_about_my_background_and_why_I_did_this_project">
+                    <header>
+                <h2>Little bit about my background and why I did this project</h2>
+            </header>
+                <p>
+                    Well that is an excellent question to get started with! It is 
+                    always a great approach to be interested in new(ish) technologies
+                    and think about how you can use them in your own projects. My 
+                    programming background is in Data Science and I love that field but 
+                    I also think that the Web Development field is super interesting
+                    and I hope that if I get fluent in this field that I somehow
+                    find a way to combine these two fields together. I work
+                    as a Developer in big ICT company in Finland and I get to do 
+                    50% of my time Data Science and another half is devoted to 
+                    Synthetic Monitoring development. 
+                </p>
+                <p>
+                    I currently follow the curriculum from FreeCodeCamp and I'm 
+                    enjoying it so far. This is one of their required projects in 
+                    order to receive the first certificate (Responsive Web Design
+                    or something like that). So this project is supposed to be a 
+                    techinal documentation of something and I chose to write it about
+                    CSS grid in order to boost my CSS grid knowledge. Let's make it clear
+                    here that I'm not designer in any kind of level and making appealing
+                    interfaces is still pretty big mystery for me. But hey, I'm here to 
+                    learn and I intend to learn stuff so that my sites and applications
+                    look nice and appealing to users. But I think that you are 
+                    already getting tired of hearing about me, let's dive in to
+                    CSS Grid!
+                </p>
+                </section>
+
+                <section class="main-section" id="Why_use_CSS_Grid?">
+                    <header>
+                <h2>Why use CSS Grid?</h2>
+            </header>
+                <p>
+                    Well, that is an excellent question my friend! First of all
+                    CSS grid allows you to modify your lements in <i>both</i> vertically
+                    and horizontally. You can't do this with flexbox, so CSS Grid takes 
+                    the lead here. But you don't have to count out either because they
+                    synergize pretty well. Flexbox has better browser support but I 
+                    sincerely hope that CSS Grid gets that kind of browser support fast (
+                    or maybe it already has)
+                </p>
+                <p>I personally find that CSS Grid makes it easier to design your 
+                    page layout. You can just split it into different sized boxes.
+                    And the great part here is that you can easily swap the order of 
+                    the boxes, so if you want to change layout in the fly it is very 
+                    much possible utilizing CSS Grid. CSS Grid also has some own tips and 
+                    tricks to make your web pages responsible using media queries and CSS 
+                    Grids own special element properties. But we well get there eventually 
+                    if you manage to tag along for so long.
+                </p>
+                </section>
+
+                <section class="main-section" id="How_do_I_use_this_great_CSS_Grid">
+                    <header>
+                <h2>How do I use this great CSS Grid?</h2>
+            </header>
+                <p>
+                    Well it is pretty easy if you are familiar with the Flexbox.
+                    You just basically assign your parent element (usually class or id
+                    of it is named "container" or "wrapper") and tada! Congrats, you just
+                    created a simple CSS Grid. Here is an example how to put in use in 
+                    css-file:<br><br>
+                <code>
+                    .container { <br>
+                        display: grid;<br>
+                    } 
+                </code>
+                </p>
+                <p>Sure this doesn't do pretty much anything if you did the previous step. You
+                    can alter how many columns and rows your CSS Grid container or wrapper includes.
+                    Here is a simple example where I split the page horizontally into two spaces;
+                    smaller for navigation element and bigger for the main content:<br><br>
+                <code>
+                    .container { <br>
+                        display: grid;<br>
+                        grid-template-columns: 1fr 4fr;<br>
+                    }
+                    </code> <br><br>
+                    Here I just created a split where I emphatize that navigation
+                    takes 1 fraction of designated space and content takes 4 fractions.
+                    I made this because I want to show that the content is more important
+                    and should always take 4/5 fractions compared to navigations 1/5 fraction.
+                </p>
+                <p>So there I split the page into two different portions horizontally. Now I 
+                    need to do the same vertically. Lucky for us, it is very similar to the previous
+                    split (which was horizontal). So we just replace the word column with row:<br><br>
+                    <code>
+                        .container { <br>
+                            display: grid;<br>
+                            grid-template-columns: 1fr 4fr;<br>
+                            grid-template-rows 100px 150px;<br>
+                            } <br>
+                    </code><br> 
+                    Easy as that! Next up; change the order of our grid items in container/wrapper. 
+                    This one is also very handy feature of CSS Grid and it makes super easy to alter
+                    the layout of your page. You give items in your parent container or wrapper grid-area name
+                    which you use in one of great CSS properties. Here I'm going to stick with our example
+                    where I have to columns; navigation and main-section. Note that these are divs in my 
+                    html and therefore I use dot-sign in front of them in examples. Here is how I point names
+                    to my items in container:<br><br>
+                    <code>
+                        .navigation {<br>
+                            grid-area: navigation;<br>
+                        } <br><br>
+                        .content {<br>
+                        grid-area: content;<br>
+                        }<br>
+                    </code><br>
+                    So how do I change to order of my items in layout? I'm going to show you my correct layout and opposite of it in 
+                    the next example. This is my preferred layout order:<br><br>
+                    <code>
+                        .container {<br>
+                            display: grid;<br>
+                            grid-template-columns: 1fr 4fr;<br>
+                            grid-template-areas: <br>
+                            "navigation content";<br>
+                        }<br>
+                    </code><br>
+                    You can see that I used the grid-template-areas here to arrange the items as I see fit. Note that we used our 
+                    previously defined grid-area values in the grid-template-areas property. Now if I wanted to change the order
+                    to opposite that would be easy to do, like this:<br><br>
+                    <code>
+                        .container {<br>
+                            display: grid;<br>
+                            grid-template-columns: 1fr 4fr;<br>
+                            grid-template-areas: <br>
+                            "content navigation";<br>
+                        }<br>
+                    </code><br>
+                    Here you can see that I just swapped the places of content and navigation in grid-template-areas and the 
+                    layout is now completely different compared to the first and actually it is opposite. See how simple
+                    and easy that was! 
+                </p>
+                </section>
+
+                <section class="main-section" id="Thanks_for_reading!">
+                    <header>
+                <h2>Thanks for reading!</h2>
+            </header>
+                <p>
+                    This was just a teaser for CSS Grid but if I get positive feedback
+                    about it I might consider doing longer tutorial/techical documentation. Here are some short
+                    tips to keep you coding:<br><br> 
+                    <ul>
+                        <li>Keep coding everyday, even 20 minutes is fine</li>
+                        <li>Keep your passion lit</li>
+                        <li>Get in the coding zone by reading interesting coding articles/books</li>
+                        <li>Do your own side projects</li>
+                        <li>Remember to rest well</li>
+                        <li>Do also other stuff you love, for example video games, play ice-hockey, etc.</li>
+                    </ul>
+                    Happy coding!</p>
+                
+                <div class="button">
+                    <a href="#content">Back to top</a>
+                </div>
+                </section> 
+            </div>
+
+
+        </section>
+
+        <nav class="navigation" id="navbar">
+            <header>
+            <h2>Navigation</h2>
+        </header>
+            <ul>
+                <li><a href="#Welcome_to_the_Technical_Guide_to_how_to_use_CSS" class="nav-link">Welcome</a></li>
+                <li><a href="#Little_bit_about_my_background_and_why_I_did_this_project" class="nav-link">Background</a></li>
+                <li><a href="#Why_use_CSS_Grid?" class="nav-link">Why CSS Grid</a></li>
+                <li><a href="#How_do_I_use_this_great_CSS_Grid" class="nav-link">How to use CSS Grid</a></li>
+                <li><a href="#Thanks_for_reading!" class="nav-link">Thanks for reading!</a></li>
+
+            </ul>
+        </nav>
+
+    </main>
+
+    
+
+    <footer>&copy; Ville Mäkinen 2018</footer>
+
+</body>
+</html>

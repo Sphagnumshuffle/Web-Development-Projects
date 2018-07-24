@@ -1,0 +1,85 @@
+html, body {
+  background: #80ccff; 
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+}
+
+p {
+  font-family: 'Acme', sans-serif;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+img {
+  width: 30%;
+  background: green;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.boxes, 
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#submit {
+  background-color: #80ffaa;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 90px;
+  margin: 10px;
+  border: 0px solid;
+}
+  
+
+#outer-form {
+  background: #d0d0e1;
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+  padding-bottom: 10px;
+}
+
+#description {
+  text-align: center;
+}
+
