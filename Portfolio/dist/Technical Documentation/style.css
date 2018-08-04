@@ -1,0 +1,80 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#main-doc {
+    display: grid;
+    background:#b37700;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "navigation main-section";
+    grid-gap: 20px;
+}
+
+.main-section {
+    background: #00b36b;
+    grid-area: main-section;
+}
+
+.navigation {
+    grid-area: navigation;
+    background: #b37700;
+    position: fixed;
+}
+
+navigation > h2 {
+    position: fixed;
+}
+
+.button {
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin-left: 10px;
+}
+
+code {
+    background-color: grey;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.2em;
+    background: grey;
+}
+
+@media(max-width: 500px) {
+    #main-doc {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:  
+        "navigation"
+        "main-section";
+        grid-gap: 10px;
+    }
+    .navigation {
+        width: 100%;
+    }
+    .main-section {
+        width: 100%;
+    }
+
+}
+
+/* What to do next: change all h2 tags to headers and copy styling of h2 to header tag */
